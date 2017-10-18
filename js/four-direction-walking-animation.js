@@ -87,6 +87,11 @@ function updateFrame(){
     srcX = currentFrame * width;
     ctx.clearRect(x, y, width, height);
     
+    if(!left && !right && !up && !down){
+        srcY = trackUp * height;
+       x == speed;
+    }
+    
     //if left is true and the character has not reached the left edge
     if(left && x > 0){
         //Calculate srcY
